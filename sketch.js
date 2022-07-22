@@ -58,16 +58,16 @@ function draw(){
     
     imagePos = {dx, dy, dw, dh}
     
-    let widthMultiply = (imagePos.dw/533)
-    let heightMultiply = (imagePos.dh/774)
-    let newButtonPos = {
-      x: imagePos.dx + (buttonPos.x * widthMultiply),
-      y: imagePos.dy + (buttonPos.y * heightMultiply),
-      w: buttonPos.w * widthMultiply,
-      h: buttonPos.h * heightMultiply,
-    }
-    fill(0,0,255,100);
-    rect(newButtonPos.x,newButtonPos.y,newButtonPos.w,newButtonPos.h)
+//     let widthMultiply = (imagePos.dw/533)
+//     let heightMultiply = (imagePos.dh/774)
+//     let newButtonPos = {
+//       x: imagePos.dx + (buttonPos.x * widthMultiply),
+//       y: imagePos.dy + (buttonPos.y * heightMultiply),
+//       w: buttonPos.w * widthMultiply,
+//       h: buttonPos.h * heightMultiply,
+//     }
+//     fill(0,0,255,100);
+//     rect(newButtonPos.x,newButtonPos.y,newButtonPos.w,newButtonPos.h)
   }
   else {
     fill(255);
