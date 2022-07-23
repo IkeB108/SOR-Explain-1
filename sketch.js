@@ -52,7 +52,6 @@ function draw(){
     
     if(frameCount % 60 < 30){
       sx += imagesw;
-      dx -= 0.3
     }
     image(comicImage, dx, dy, dw, dh, sx, 0, imagesw - 5, imagesh)
     
