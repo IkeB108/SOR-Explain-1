@@ -4,7 +4,7 @@ function setup(){
   })
   
   myLoader = new FileLoader({
-    comicImage: "comic1.jpg"
+    comicImage: "comic1.png"
   })
   
   textAlign(CENTER,CENTER)
@@ -12,8 +12,8 @@ function setup(){
   currentPanel = 0;
 
   //357 x 500
-  imagesw = 357
-  imagesh = 500
+  imagesw = 500
+  imagesh = 700
 
   //when image is 533 x 774...
   buttonPos = {
@@ -58,19 +58,19 @@ function draw(){
     
     imagePos = {dx, dy, dw, dh}
     
-//     let widthMultiply = (imagePos.dw/533)
-//     let heightMultiply = (imagePos.dh/774)
-//     let newButtonPos = {
-//       x: imagePos.dx + (buttonPos.x * widthMultiply),
-//       y: imagePos.dy + (buttonPos.y * heightMultiply),
-//       w: buttonPos.w * widthMultiply,
-//       h: buttonPos.h * heightMultiply,
-//     }
-//     fill(0,0,255,100);
-//     rect(newButtonPos.x,newButtonPos.y,newButtonPos.w,newButtonPos.h)
+    // let widthMultiply = (imagePos.dw/533)
+    // let heightMultiply = (imagePos.dh/774)
+    // let newButtonPos = {
+    //   x: imagePos.dx + (buttonPos.x * widthMultiply),
+    //   y: imagePos.dy + (buttonPos.y * heightMultiply),
+    //   w: buttonPos.w * widthMultiply,
+    //   h: buttonPos.h * heightMultiply,
+    // }
+    // fill(0,0,255,100);
+    // rect(newButtonPos.x,newButtonPos.y,newButtonPos.w,newButtonPos.h)
   }
   else {
-    fill(255);
+    fill(0);
     text("Loading...", width/2, height/2)
   }
 }
