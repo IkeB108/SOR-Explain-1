@@ -70,7 +70,8 @@ function draw(){
     // rect(newButtonPos.x,newButtonPos.y,newButtonPos.w,newButtonPos.h)
   }
   else {
-    fill(0);
+    background(255);
+    fill(0); textSize(width/20)
     text("Loading...", width/2, height/2)
   }
 }
